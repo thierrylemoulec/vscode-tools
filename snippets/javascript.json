@@ -1,0 +1,64 @@
+{
+/*
+	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+	"React: ComponentDidMount": {
+		"prefix": "cdm",
+		"body": [
+			"componentDidMount() { "
+			+ "	$1 "
+			+ "}"
+		],
+		"description": "ComponentDidMount react lifecycle"
+	},
+	"React: Stateless Component": {
+		"prefix": "stateless",
+		"body": [
+			"import React from \"react\"",
+			"\n",
+			"const ${1:TM_FILENAME_BASE} = (${2:props}) => {",
+			"\treturn (",
+			"\t\t${3:<div></div>}",
+			"\t)",
+			"}",
+			"export default ${1:TM_FILENAME_BASE}"
+		],
+		"description": "React stateless component"
+	},
+	"React: Class Component": {
+		"prefix": "component",
+		"body": [
+			"import React from \"react\"",
+			"\n",
+			"class ${TM_FILENAME_BASE} extends React.Component {",
+			"\trender(){",
+			"\t\treturn (",
+			"\t\t\t${3:<div></div>}",
+			"\t\t)",
+			"\t}",
+			"}",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "React class component"
+	},
+	"Styled: component": {
+		"prefix": "styled",
+		"body": [
+			"export const ${1:StyledComponent} = styled.${2:div}`$3`"
+		],
+		"description": "Styled component"
+	},
+}
